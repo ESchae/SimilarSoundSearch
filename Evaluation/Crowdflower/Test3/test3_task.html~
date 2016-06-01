@@ -1,0 +1,52 @@
+<div class="row-fluid">
+  <div class="span6">
+    <div class="html-element-wrapper"></div>
+    <cml:radios label="Are these two sounds similar?" validates="required" gold="true" name="are_these_two_sounds_similar" aggregation="all">
+
+      <p></p>
+      
+      <div>
+        <audio controls="controls">
+          <source src="{{query-preview-lq-ogg}}" type="audio/ogg"></source>
+          <source src="{{query-preview-lq-mp3}}" type="audio/mpeg"></source>
+          <p>Your browser does not support the audio element.</p>
+        </audio>
+      </div>
+      
+      <div>
+        <audio controls="controls">
+          <source src="{{result-preview-lq-ogg}}"></source>
+          <source src="{{result-preview-lq-mp3}}"></source>
+          <p>Your browser does not support the audio element.</p>
+        </audio>
+      </div>
+      <p></p>
+
+      <cml:radio label="The sounds are similar" value="first_option"></cml:radio>
+      <cml:radio label="The sounds are not similar" value="second_option"></cml:radio>
+    </cml:radios>
+    
+  </div>
+  <div class="span6">
+    <h4>Please remember:</h4>
+    <p></p>
+    <li>
+      Make sure to 
+      <b> not skip important parts </b> of the file.
+    </li>
+    <p></p>
+    <li>Do not let influence similarities of the sound source your similarity rating! Instead, 
+      <b>
+        <font color="red">rely on acoustical similarity.</font>
+      </b>
+    </li>
+    <p></p>
+    <li>
+      The question is not about exact similarity. 
+      It is also not about finding any possible similarity (because everything has something in common with everything).
+      Just 
+      <b>trust your spontaneous impression of similarity </b> between the two sounds.
+    </li>
+  </div>
+</div>  
+
