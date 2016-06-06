@@ -1,4 +1,4 @@
-# About this folder #
+# About this folder
 
 This folder contains all information about the dataset 1 (D1) used for evaluation
 of the implemented algorithm. This means basically there is the complete dataset
