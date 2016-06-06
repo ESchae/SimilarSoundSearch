@@ -10,7 +10,6 @@ via [Freesound's API](http://www.freesound.org/docs/api/).
 * /audiofiles --> the .mp3 files of all 150 sounds from D1
 * audiofiles.csv --> overview of the 150 files with short descriptions in German (this is exact the same table as can be found in the appendix of the corresponding Bachelor's thesis)
 * audiofiles.json --> contains information on every sound in the form
-
 ```javascript
 "<Freesound_id>": {
         "name": <name on Freesound>, 
