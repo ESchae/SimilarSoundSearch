@@ -628,7 +628,7 @@ max_similars=2, duration_limit=23)
                         (i + 1, ' '.join([x[i] for x in all_distances])))
 
     def freesound_results(self, input_file='freesound_distances.txt',
-                          output_file='resultlists_freesound.txt'):
+                          output_file='results_freesound.txt'):
         """ Method for generating the needed file for evaluation.
 
         The file will have the same form like the benchmark, this means

@@ -1,0 +1,30 @@
+p-value	nDCG
+results_withoutmfcc.txt	100.00	70.90	3.32	48.05
+results_onlymfcc.txt	70.90	100.00	12.70	76.17
+results_allfeatures.txt	3.32	12.70	100.00	31.25
+results_freesound.txt	48.05	76.17	31.25	100.00
+
+p-value	acc_0
+results_withoutmfcc.txt	100.00	0.20	0.59	0.20
+results_onlymfcc.txt	0.20	100.00	75.39	0.78
+results_allfeatures.txt	0.59	75.39	100.00	0.78
+results_freesound.txt	0.20	0.78	0.78	100.00
+
+p-value	acc_1
+results_withoutmfcc.txt	100.00	7.81	1.17	1.17
+results_onlymfcc.txt	7.81	100.00	3.91	2.73
+results_allfeatures.txt	1.17	3.91	100.00	6.25
+results_freesound.txt	1.17	2.73	6.25	100.00
+
+p-value	acc_2
+results_withoutmfcc.txt	100.00	79.30	77.93	81.25
+results_onlymfcc.txt	79.30	100.00	100.00	95.31
+results_allfeatures.txt	77.93	100.00	100.00	100.00
+results_freesound.txt	81.25	95.31	100.00	100.00
+
+p-value	av
+results_withoutmfcc.txt	100.00	79.88	86.72	63.28
+results_onlymfcc.txt	79.88	100.00	87.89	89.84
+results_allfeatures.txt	86.72	87.89	100.00	73.44
+results_freesound.txt	63.28	89.84	73.44	100.00
+
