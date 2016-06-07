@@ -7,7 +7,9 @@ via [Freesound's API](http://www.freesound.org/docs/api/).
 
 ## Contents
 
-* /audiofiles --> the .mp3 files of all 150 sounds from D1
+* /audiofiles --> the .mp3 files of all 150 sounds from D1 (better suited for processing or reproducing results or get more information related to freesound about the files)
+
+* /audiofiles_ better_ to_read --> the .mp3 files from D1 (better suited for human reading)
 
 * audiofiles.csv --> overview of the 150 files with short descriptions in German (this is exact the same table as can be found in the appendix of the corresponding Bachelor's thesis)
 
