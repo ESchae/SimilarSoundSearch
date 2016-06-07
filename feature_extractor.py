@@ -8,9 +8,24 @@ see http://essentia.upf.edu/ for the documentation and
 https://github.com/MTG/essentia for the source code.
 
 """
+import essentia  # needed explicitely for accessing logging module
+
+# There were to different warnings encountered during implementation which
+# both do not seem to affect the overall quality of the algorithm:
+# 1: during loading mp3 files there is a 'Deprecated Audioconert' warning
+# 2: for any import from essentia a 'ARGLLLLLL' warning
+# Warnings are reported but not yet solved,
+# see https://github.com/MTG/essentia/issues/410
+
+# To not interrupt the main program with the two warnings essentia logging
+# is disabled.
+# Note: Should definitely be enabled again while further development.
+essentia.log.warningActive = False
+
+
+# needed algorithms from essentia
 from essentia.standard import PoolAggregator
 from essentia import Pool
-import essentia  # needed for accessing logging module
 from essentia.streaming import (MonoLoader,
                                 Envelope,
                                 RealAccumulator,
@@ -24,18 +39,6 @@ from essentia.streaming import (MonoLoader,
                                 Centroid,
                                 PitchYinFFT,
                                 MFCC)
-
-# There were to different warnings encountered during implementation which
-# both do not seem to affect the overall quality of the algorithm:
-# 1: during loading mp3 files there is a 'Deprecated Audioconert' warning
-# 2: for any import from essentia a 'ARGLLLLLL' warning
-# Warnings are reported but not yet solved,
-# see https://github.com/MTG/essentia/issues/410
-
-# To not interrupt the main program with the two warnings essentia logging
-# is disabled.
-# Note: Should definitely be enabled again while further development.
-essentia.log.warningActive = False
 
 
 class FeatureExtractor(essentia.streaming.CompositeBase):
