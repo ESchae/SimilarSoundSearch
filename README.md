@@ -18,12 +18,14 @@ You can download it from [here](https://github.com/MTG/essentia/tree/v2.1_beta2_
 
 * [scikit-learn](http://scikit-learn.org/stable/install.html) for nearest neighbors search (requires numpy and scipy)
 
->$ pip install scikit-learn
+´$ pip install scikit-learn´
 
 * [SoX](https://wiki.ubuntuusers.de/SoX/) for listen to the files directly from the terminal
 and a handler for mp3 files
 
 >$ sudo apt-get install sox libsox-fmt-mp3
+
+
 
 If using the example database is not enough for you and you want to work with the SoundBase class you need the following:
 
@@ -36,5 +38,6 @@ If using the example database is not enough for you and you want to work with th
 then for more information simply type
 
 >$ python soundbase.py -h
+
 
 Up to now the functionality was only tested on Ubuntu 14.04.
