@@ -1,0 +1,34 @@
+Query: Evaluation/D1/audiofiles/0-110011.mp3
+Result: 
+NN 1: Evaluation/D1/audiofiles/0-110011.mp3 with distance 0.00
+NN 2: Evaluation/D1/audiofiles/110011-0.98-256452.mp3 with distance 2.67
+NN 3: Evaluation/D1/audiofiles/110011-1.45-315834.mp3 with distance 4.53
+NN 4: Evaluation/D1/audiofiles/50802-0.84-83930.mp3 with distance 4.59
+NN 5: Evaluation/D1/audiofiles/50802-0.83-178925.mp3 with distance 4.98
+NN 6: Evaluation/D1/audiofiles/110011-1.45-339894.mp3 with distance 4.98
+NN 7: Evaluation/D1/audiofiles/50802-0.80-167277.mp3 with distance 4.99
+NN 8: Evaluation/D1/audiofiles/50802-0.82-74408.mp3 with distance 4.99
+NN 9: Evaluation/D1/audiofiles/110011-1.39-315829.mp3 with distance 5.03
+NN 10: Evaluation/D1/audiofiles/110011-1.42-41251.mp3 with distance 5.04
+NN 11: Evaluation/D1/audiofiles/50802-0.82-156091.mp3 with distance 5.05
+NN 12: Evaluation/D1/audiofiles/5560-0.94-255209.mp3 with distance 5.11
+NN 13: Evaluation/D1/audiofiles/50802-0.83-240734.mp3 with distance 5.11
+NN 14: Evaluation/D1/audiofiles/50802-0.82-343282.mp3 with distance 5.15
+
+Query: Evaluation/D1/audiofiles/0-110011.mp3
+Result: 
+NN 1: Evaluation/D1/audiofiles/0-110011.mp3 with distance 0.00
+NN 2: Evaluation/D1/audiofiles/110011-0.98-256452.mp3 with distance 2.67
+NN 3: Evaluation/D1/audiofiles/110011-1.45-315834.mp3 with distance 4.53
+NN 4: Evaluation/D1/audiofiles/50802-0.84-83930.mp3 with distance 4.59
+NN 5: Evaluation/D1/audiofiles/50802-0.83-178925.mp3 with distance 4.98
+NN 6: Evaluation/D1/audiofiles/110011-1.45-339894.mp3 with distance 4.98
+NN 7: Evaluation/D1/audiofiles/50802-0.80-167277.mp3 with distance 4.99
+NN 8: Evaluation/D1/audiofiles/50802-0.82-74408.mp3 with distance 4.99
+NN 9: Evaluation/D1/audiofiles/110011-1.39-315829.mp3 with distance 5.03
+NN 10: Evaluation/D1/audiofiles/110011-1.42-41251.mp3 with distance 5.04
+NN 11: Evaluation/D1/audiofiles/50802-0.82-156091.mp3 with distance 5.05
+NN 12: Evaluation/D1/audiofiles/5560-0.94-255209.mp3 with distance 5.11
+NN 13: Evaluation/D1/audiofiles/50802-0.83-240734.mp3 with distance 5.11
+NN 14: Evaluation/D1/audiofiles/50802-0.82-343282.mp3 with distance 5.15
+

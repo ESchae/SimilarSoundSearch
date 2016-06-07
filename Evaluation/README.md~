@@ -1,0 +1,21 @@
+# About this folder
+
+This folder contains files that were used for evaluating the implemented
+algorithm. For details please refer to the corresponding Bachelor's thesis 
+(written in German).
+
+to be included:
+- allfeatures_results.txt
+- onlymfcc_results.txt
+- withoutmfcc_results.txt
+- freesound_results.txt
+(nur andersrum benennen)
+
+- evaluation_utils.py
+
+
+maxbe in miscellaneous
+- freesound_distances.txt
+- cases.json
+
+Abbildungen?

@@ -17,6 +17,7 @@ of most similar sounds to the query found in the soundbase. If no query is speci
 Once presented with the results you can decide if you want to listen to the sounds directly from the terminal, perform a new query or exit.
 
 
+
 The simplest mode is to use the precomputed exmaple database D1.db along with -D1:
 Everytime you use 'r' for the next query there will be one of the ten query sounds
 used for searching. This makes life quite easy!
@@ -25,7 +26,7 @@ used for searching. This makes life quite easy!
 
 ![alt tag](https://cdn.rawgit.com/ESchae/SimilarSoundSearch/master/usage.gif)
 
-Indeed there is no sound in this example, because it is only a simple .gif file.
+Indeed there is no sound in this example.
 Be encouraged to try it on your own!
 
 If you want to customize your search check

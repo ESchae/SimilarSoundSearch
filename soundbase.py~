@@ -501,7 +501,7 @@ path and audiofeatures for all audiofiles found at a given directory.')
     parser.add_argument('-d', '--delete',
                         help='delete existing soundbase with given filename, \
 default=False', action='store_true')
-    parser.add_argument('-o', '--output', type=str,
+    parser.add_argument('-o', ,'--output', type=str,
                         help='freeze database to given filename')
     parser.add_argument('-ext', '--extensions', type=str,
                         help='which file extension to include, \

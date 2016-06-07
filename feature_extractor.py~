@@ -243,3 +243,4 @@ class FeatureExtractor(essentia.streaming.CompositeBase):
         self._pool = pool
         self.features = aggrPool
         self.feature_names = aggrPool.descriptorNames()
+
