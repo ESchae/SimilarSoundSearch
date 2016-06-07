@@ -18,7 +18,7 @@ You can download it from [here](https://github.com/MTG/essentia/tree/v2.1_beta2_
 
 * [scikit-learn](http://scikit-learn.org/stable/install.html) for nearest neighbors search (requires numpy and scipy)
 
-´$ pip install scikit-learn´
+`$ pip install scikit-learn`
 
 * [SoX](https://wiki.ubuntuusers.de/SoX/) for listen to the files directly from the terminal
 and a handler for mp3 files
