@@ -9,6 +9,24 @@ Given an audiofile as query and a specific database with sounds the algorithm re
 the most similar sounds to the query. You can directly listen to the sounds from 
 the terminal.
 
+## Usage
+
+To perform a search you need to call similarsound.py from the terminal.
+The simplest mode is to use the precomputed exmaple database D1.db along with -D1:
+Everytime you use 'r' for the next query there will be one of the ten query sounds
+used for searching. This makes life quite easy!
+
+`$ python similarsounds.py D1.db -D1`
+
+![alt tag](https://cdn.rawgit.com/ESchae/SimilarSoundSearch/master/usage.gif)
+
+If you want to customize your search check
+`$
+
+To perform a similar sound search you first need to have your audiofiles processed
+and saved in a sql database (aka. soundbase), see below.
+
+
 ## Requirements
 
 * python 2.x (used version is 2.7.6., theres no support yet for python 3 because of missing support for python 3 within Essentia (see https://github.com/MTG/essentia/issues/138)
@@ -23,9 +41,9 @@ You can download it from [here](https://github.com/MTG/essentia/tree/v2.1_beta2_
 * [SoX](https://wiki.ubuntuusers.de/SoX/) for listen to the files directly from the terminal
 and a handler for mp3 files
 
->$ sudo apt-get install sox libsox-fmt-mp3
+`$ sudo apt-get install sox libsox-fmt-mp3`
 
-
+---
 
 If using the example database is not enough for you and you want to work with the SoundBase class you need the following:
 
@@ -33,11 +51,15 @@ If using the example database is not enough for you and you want to work with th
 
 * [tqdm](https://pypi.python.org/pypi/tqdm) for displaying a nice progressbar 
 
->$ pip install dataset tqdm
+`$ pip install dataset tqdm`
 
 then for more information simply type
 
->$ python soundbase.py -h
+`$ python soundbase.py -h`
 
 
 Up to now the functionality was only tested on Ubuntu 14.04.
+
+
+
+
