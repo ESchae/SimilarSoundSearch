@@ -30,4 +30,12 @@ similarity score (0-5), sorted by decreasing similarityscore.
 
 * resultlists_... .txt --> benchmark-like files, but with the resultlists from the four algorithms from above. Note that these contain distances instead of a similarity score and hence are sorted ascending by distance to the query sound
 
-* ...
+* evaluation_overview... .txt --> the results of the evaluation measures for every algorithm and query as well as the averages over all queries per algorithm
+
+* scores.dat --> the non scales distances of the four algorithms for every query in increasing order, was used for plotting
+
+* scores_scaled ... .dat --> dito, but the scaled versions
+
+* significance_ ... .txt --> all pairwise p-values of the R-Test
+
+* evaluation_utils.py --> code used for evaluation purposes
