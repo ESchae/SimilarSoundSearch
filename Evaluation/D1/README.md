@@ -34,3 +34,4 @@ via [Freesound's API](http://www.freesound.org/docs/api/).
 * freesound_distances.txt --> contains the Freesound distances from all ten queries of D1 to every of the 150 sounds from D1
 * freesound_origina _distances.txt --> contains for every of the ten queries from D1 the distances to the top 150 search results of Freesound's similarity search
 * freesound_utils.py --> contains the code used for working with Freesound's API
+* queries.mp3 --> the ten queries in the short version in one file as used as example in the thesis
