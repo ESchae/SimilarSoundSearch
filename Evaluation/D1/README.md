@@ -13,6 +13,8 @@ via [Freesound's API](http://www.freesound.org/docs/api/).
 
 * audiofiles.csv --> overview of the 150 files with short descriptions in German (this is exact the same table as can be found in the appendix of the corresponding Bachelor's thesis)
 
+* audiofiles.db and audiofiles_better _to _read.db --> example databases of the above folders, the second one used for D1 mode in similarsounds.py
+
 * audiofiles.json --> contains Freesound related information on every sound in the form
 ```javascript
 <Freesound id>: {

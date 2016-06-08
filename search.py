@@ -526,7 +526,7 @@ feature vector could be build""")
         result = self.nbrs.kneighbors(query_vector[0])
         return result
 
-    def print_result(self, result, output=sys.stdout):
+    def print_result(self, result, output=sys.stdout, basename=False):
         """ Method for printing the query result nicely.
 
         Parameters
@@ -555,6 +555,8 @@ feature vector could be build""")
         for i, neighbor in enumerate(inds[0]):
             row = self.soundbase.get_row(neighbor + 1)
             f = row['path']
+            if basename:
+                f = os.path.basename(f)
             print("NN %d: %s with distance %.2f" % (i + 1, f, dist[0][i]),
                   file=output)
 
@@ -579,7 +581,7 @@ feature vector could be build""")
 
         Examples
         --------
-        >>> S = Search('D1.db')
+        >>> S = Search('Evaluation/D1/audiofiles.db')
         >>> dists, ids = S.query('Evaluation/D1/audiofiles/0-110011.mp3')
         >>> result_ids = ids[:6][0]
         >>> result_ids
@@ -607,7 +609,7 @@ feature vector could be build""")
 
         Examples
         --------
-        >>> S = Search('D1.db', n=3, features='')
+        >>> S = Search('Evaluation/D1/audiofiles.db', n=3, features='')
         >>> query_ids = ['Evaluation/D1/audiofiles/0-2155.mp3',
         ...    'Evaluation/D1/audiofiles/0-5560.mp3']
         >>> results = S._results(query_ids)

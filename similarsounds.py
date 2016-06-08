@@ -58,6 +58,7 @@ def test_audiofile_validity(filename):
 def display_query(query, random_mode=False, listening=False):
     """ This function prints the given query , if wished in bold. """
     # go to beginning of line 4
+    query = os.path.basename(query)
     print("\033[4;0H")
     if random_mode:
         print("\033[1;32mYour random query: \033[0m", end='')
@@ -72,6 +73,7 @@ def display_query(query, random_mode=False, listening=False):
 
 def display_result(i, n, path, distance, listening=False):
     line = 5 + i
+    path = os.path.basename(path)
     print("\033[%d;0H" % line)
     if listening:
         # print bold and cyan
@@ -101,10 +103,6 @@ given an audiofile will be randomly selected from the soundbase')
     parser.add_argument('-output', type=str,
                         help='name of a file to which results should be \
 printed additionally')
-    parser.add_argument('-D1', action='store_true',
-                        help='each time you use "r" for a new query, \
-one of the ten queries from D1 will be used, must be used together with \
-D1.db')
     parser.add_argument('-features', type=str,
                         help='which features to include, possible options: \
 pitch, pitchConfidence, mfcc, spectralcnetroid, duration, logattacktime, \
@@ -130,13 +128,17 @@ comma separated)')
     if args.query:
         test_audiofile_validity(args.query)
 
+    mode = None
+    # set D1 mode
+    if args.soundbase == 'D1':
+        args.soundbase = 'Evaluation/D1/audiofiles_better_to_read.db'
+        # iterate over all queries from D1
+        queries = itertools.cycle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+        mode = 'D1'
+
     # check if soundbase exists
     if not os.path.isfile(args.soundbase):
         raise IOError("SoundBase %s does not exist" % args.soundbase)
-
-    if args.D1 and (args.soundbase != 'D1.db'):
-        raise IOError(
-            'option -D1 can only be used if D1.db is used as soundbase')
 
     # --------------- begin of interactive communication ------------------- #
 
@@ -160,12 +162,11 @@ comma separated)')
 
     # get query
     if not args.query:
-        random_mode = True
-        if args.D1:
-            # iterate over all queries
-            queries = itertools.cycle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+        if mode == 'D1':
             query_id = queries.next()
+            random_mode = False
         else:
+            random_mode = True
             query_id = random.randint(1, max_rows)
         query = db.get_row(query_id)['path']
     else:
@@ -186,7 +187,7 @@ comma separated)')
     # print result
     result = s.query(query)
     print("\033[1;32mResult: \033[0m")
-    s.print_result(result)
+    s.print_result(result, basename=True)
 
     if args.output:
         # write result to file
@@ -260,7 +261,7 @@ comma separated)')
             try:
                 query = input("New query file or r(andom): ")
                 if query == 'r':  # randomly select new query
-                    if args.D1:
+                    if mode == 'D1':
                         query_id = queries.next()
                     else:
                         query_id = random.randint(1, 10)
@@ -273,7 +274,7 @@ comma separated)')
                 # print new result
                 result = s.query(query)
                 print("\033[6;0H\033[1;32mResult: \033[0m")
-                s.print_result(result)
+                s.print_result(result, basename=True)
                 if args.output:
                     # write result to file for evaluating D2
                     with open(args.output, 'a') as f:
