@@ -11,58 +11,65 @@ the terminal.
 
 ## Usage
 
-To perform a search you need to call similarsound.py from the terminal.
+To perform a search you need to call similarsounds.py from the terminal.
 Given a soundbase and a query the program will return a list
-of most similar sounds to the query found in the soundbase. If no query is specified, any randomly selected sound from the soundbase will be used.
+of most similar sounds to the query found in the soundbase. If no query is specified, a randomly selected sound from the soundbase will be used.
 Once presented with the results you can decide if you want to listen to the sounds directly from the terminal, perform a new query or exit.
 
 
-The simplest mode is to use the precomputed exmaple database D1.db along with -D1:
-Everytime you use 'r' for the next query there will be one of the ten query sounds
-used for searching. This makes life quite easy!
-
-`$ python similarsounds.py D1.db -D1`
-
 ![alt tag](https://cdn.rawgit.com/ESchae/SimilarSoundSearch/master/usage.gif)
 
-Indeed there is no sound in this example, because it is only a simple .gif file.
-Be encouraged to try it on your own!
+
 
 If you want to customize your search check
-`$ python similarsounds.py -h`
-for more options.
 
-To perform a similar sound search you first need to have your audiofiles processed
-and saved in a sql database (aka. soundbase), see below.
+`$ python similarsounds.py -h`
+
+for more options.
 
 
 ## Requirements
 
+### Linux
+
 * python 2.x (used version is 2.7.6., theres no support yet for python 3 because of missing support for python 3 within Essentia (see https://github.com/MTG/essentia/issues/138)
 
-* [Essentia](http://essentia.upf.edu/) (v.2.1._beta2 _fixes) for feature extraction
-You can download it from [here](https://github.com/MTG/essentia/tree/v2.1_beta2_fixes) and follow the instructions given [here](http://essentia.upf.edu/documentation/installing.html)
+* [Essentia](http://essentia.upf.edu/) (v.2.1._beta2 _fixes) for feature extraction.
+You can download it from [here](https://github.com/MTG/essentia/tree/v2.1_beta2_fixes) for a complete installation follow the instructions [here](http://essentia.upf.edu/documentation/installing.html).
+For SimilarSoundSearch it should be enough to do the following:
+
+Install the dependencies
+`sudo apt-get install build-essential libfftw3-dev libavcodec-dev libavformat-dev libavutil-dev libavresample-dev python-dev libsamplerate0-dev python-numpy-dev python-numpy`
+
+Then go into the source directory and configure with
+`./waf configure --mode=release --with-python`
+compile
+`./waf`
+and insall (you might need sudo).
+`./waf install`
+
+
+Additional python packages:
 
 * [scikit-learn](http://scikit-learn.org/stable/install.html) for nearest neighbors search (requires numpy and scipy)
 
-`$ pip install scikit-learn`
+* [dataset](http://dataset.readthedocs.io/en/latest/install.html) 0.6.0 for sql workarounds
+
+* [tqdm](https://pypi.python.org/pypi/tqdm) for displaying a nice progressbar 
+
+`$ pip install scikit-learn dataset tqdm`
+
+
+
+For listen to audiofiles directly from terminal:
 
 * [SoX](https://wiki.ubuntuusers.de/SoX/) for listen to the files directly from the terminal
 and a handler for mp3 files
 
 `$ sudo apt-get install sox libsox-fmt-mp3`
 
----
 
-If using the example database is not enough for you and you want to work with the SoundBase class you need the following:
-
-* [dataset](http://dataset.readthedocs.io/en/latest/install.html) 0.6.0 for sql workarounds
-
-* [tqdm](https://pypi.python.org/pypi/tqdm) for displaying a nice progressbar 
-
-`$ pip install dataset tqdm`
-
-then for more information simply type
+If using the example database is not enough for you and you want to build your own just try
 
 `$ python soundbase.py -h`
 

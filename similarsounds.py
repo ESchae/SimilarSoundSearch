@@ -4,6 +4,13 @@ Copyright 2016 University of Freiburg
 Elke Schaechtele <elke.schaechtele@web.de>
 
 This file contains the main function for the similarity search for sounds.
+
+To perform a search you need to call similarsounds.py from the terminal.
+Given a soundbase and a query the program will return a list
+of most similar sounds to the query found in the soundbase. If no query is
+specified, a randomly selected sound from the soundbase will be used.
+Once presented with the results you can decide if you want to listen to
+the sounds directly from the terminal, perform a new query or exit.
 """
 from __future__ import print_function
 from soundbase import SoundBase
@@ -175,7 +182,7 @@ comma separated)')
 
     # print header
     print("\033[H\033[2J")  # erase display
-    print("\033[1;32mWelcome to SimilarSoundsSearch!\033[0m")
+    print("\033[1;32mWelcome to SimilarSoundSearch!\033[0m")
     print()
     # print database
     print("\033[1;32mYour soundbase: \033[0m", end='')
