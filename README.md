@@ -18,7 +18,7 @@ Once presented with the results you can decide if you want to listen to the soun
 
 
 Click on the picture below to see how it works (you will be redirected to the video):
-[![IMAGE ALT TEXT HERE](https://rawgit.com/ESchae/SimilarSoundSearch/master/usage.png)](https://drive.google.com/open?id=0B6VVRLCLJYT9djM3S041RllKZWM)
+[![IMAGE ALT TEXT HERE](https://rawgit.com/ESchae/SimilarSoundSearch/master/usage.png)](https://drive.google.com/file/d/0B6VVRLCLJYT9djM3S041RllKZWM/view)
 
 
 
