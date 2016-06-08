@@ -17,7 +17,7 @@ of most similar sounds to the query found in the soundbase. If no query is speci
 Once presented with the results you can decide if you want to listen to the sounds directly from the terminal, perform a new query or exit.
 
 
-![alt tag](https://cdn.rawgit.com/ESchae/SimilarSoundSearch/master/usage.gif)
+[![alt tag](https://drive.google.com/file/d/0B6VVRLCLJYT9UnJFMjd3ZWlYRG8/view?usp=sharing)](https://drive.google.com/open?id=0B6VVRLCLJYT9djM3S041RllKZWM)
 
 
 
@@ -77,8 +77,7 @@ Additional python packages:
 
 For listen to audiofiles directly from terminal:
 
-* [SoX](https://wiki.ubuntuusers.de/SoX/) for listen to the files directly from the terminal
-and a handler for mp3 files
+* [SoX](https://wiki.ubuntuusers.de/SoX/) and a handler for mp3 files
 
 `$ sudo apt-get install sox libsox-fmt-mp3`
 
