@@ -17,6 +17,7 @@ of most similar sounds to the query found in the soundbase. If no query is speci
 Once presented with the results you can decide if you want to listen to the sounds directly from the terminal, perform a new query or exit.
 
 
+Click on the picture below to see how it works (you will be redirected to the video):
 [![IMAGE ALT TEXT HERE](https://rawgit.com/ESchae/SimilarSoundSearch/master/usage.png)](https://drive.google.com/open?id=0B6VVRLCLJYT9djM3S041RllKZWM)
 
 
