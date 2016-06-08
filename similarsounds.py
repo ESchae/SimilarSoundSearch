@@ -11,6 +11,7 @@ of most similar sounds to the query found in the soundbase. If no query is
 specified, a randomly selected sound from the soundbase will be used.
 Once presented with the results you can decide if you want to listen to
 the sounds directly from the terminal, perform a new query or exit.
+
 """
 from __future__ import print_function
 from soundbase import SoundBase
