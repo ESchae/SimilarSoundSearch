@@ -17,7 +17,7 @@ of most similar sounds to the query found in the soundbase. If no query is speci
 Once presented with the results you can decide if you want to listen to the sounds directly from the terminal, perform a new query or exit.
 
 
-[![alt tag](https://drive.google.com/file/d/0B6VVRLCLJYT9UnJFMjd3ZWlYRG8/view?usp=sharing)](https://drive.google.com/open?id=0B6VVRLCLJYT9djM3S041RllKZWM)
+[![IMAGE ALT TEXT HERE](https://drive.google.com/file/d/0B6VVRLCLJYT9UnJFMjd3ZWlYRG8/view?usp=sharing)](https://drive.google.com/open?id=0B6VVRLCLJYT9djM3S041RllKZWM)
 
 
 
