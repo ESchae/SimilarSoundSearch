@@ -28,7 +28,15 @@ If you want to customize your search check
 for more options.
 
 
+If using the example database is not enough for you and you want to build your own just try
+
+`$ python soundbase.py -h`
+
+
+
 ## Requirements
+
+Up to now the functionality was only tested on Ubuntu 14.04.
 
 ### Linux
 
@@ -39,13 +47,19 @@ You can download it from [here](https://github.com/MTG/essentia/tree/v2.1_beta2_
 For SimilarSoundSearch it should be enough to do the following:
 
 Install the dependencies
+
 `sudo apt-get install build-essential libfftw3-dev libavcodec-dev libavformat-dev libavutil-dev libavresample-dev python-dev libsamplerate0-dev python-numpy-dev python-numpy`
 
 Then go into the source directory and configure with
+
 `./waf configure --mode=release --with-python`
+
 compile
+
 `./waf`
+
 and insall (you might need sudo).
+
 `./waf install`
 
 
@@ -67,15 +81,6 @@ For listen to audiofiles directly from terminal:
 and a handler for mp3 files
 
 `$ sudo apt-get install sox libsox-fmt-mp3`
-
-
-If using the example database is not enough for you and you want to build your own just try
-
-`$ python soundbase.py -h`
-
-
-Up to now the functionality was only tested on Ubuntu 14.04.
-
 
 
 
